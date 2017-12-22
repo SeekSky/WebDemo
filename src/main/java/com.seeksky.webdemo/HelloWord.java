@@ -1,5 +1,6 @@
 package com.seeksky.webdemo;
 
+
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -9,7 +10,7 @@ import java.io.PrintWriter;
 
 public class HelloWord  extends HttpServlet {
     @Override
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
         response.setContentType("text/html;charset=GB2312");
         PrintWriter out=response.getWriter();
         out.println("<html><head><title>ResInfoServlet</title></head>");
